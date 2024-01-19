@@ -673,7 +673,7 @@ letter-spacing: 0.04em;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    display: flex;
+    display: inline-flex;
     align-items: center;
 }
 
@@ -703,7 +703,7 @@ letter-spacing: 0.04em;
     text-decoration: underline;
 }
 
-.check-input:checked + .privacy-text {
+.check-input:checked + .check-text {
     background-color:#404BBF;
     border: none;
     fill: #F4F4FD;
