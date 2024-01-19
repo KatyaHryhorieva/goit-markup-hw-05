@@ -475,7 +475,7 @@ height: 40px;
 .footer-input {
     width: 264px;
     height: 40px;
-
+padding-left: 16px;
     font-size: 12px;
         font-style: normal;
         font-weight: 400;
@@ -565,6 +565,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
 background-color: #404BBF;
 border: none;
 }
+.modal-icon-close {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 
 .modal-icon {
 position: absolute;
@@ -673,14 +677,7 @@ letter-spacing: 0.04em;
     align-items: center;
 }
 
-.privacy-link {
-    color: #4D5AE5;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 0.17;
-    letter-spacing: 0.04em;
-    text-decoration: underline;
-}
+
 
 .privacy-text {
     display: inline-flex;
@@ -697,8 +694,16 @@ letter-spacing: 0.04em;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+.privacy-link {
+    color: #4D5AE5;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 0.17;
+    letter-spacing: 0.04em;
+    text-decoration: underline;
+}
 
-.check-input:checked + .check-text span {
+.check-input:checked + .privacy-text {
     background-color:#404BBF;
     border: none;
     fill: #F4F4FD;
