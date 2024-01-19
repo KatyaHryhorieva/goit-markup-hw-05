@@ -416,18 +416,20 @@
             </li>
         </ul>
     </div>
-    <div>
+    <div class="subcribe">
         <p class="footer-text subheader">Subscribe</p>
-        <form>
-            <div class="footer-form">
-            <input type="email" name="user-email" class="modal-input" id="email" placeholder="Email" />
+        <form class="footer-form">
+            <label class="footer-label">
+                <input type="email" name="user-email" class="footer-input" id="email" placeholder="E-mail" />
+            </label>
+            
                 <button type="submit" class="button btn-footer">Subscribe 
                                     <svg class="btn-icon" width="24" height="24">
                                         <use href="./images/icons.svg#icon-send"></use>
                                     </svg>
                 </button>
 
-            </div>
+     
     
         </form>
     </div>
@@ -489,7 +491,7 @@
         </div>
 
 
-        <div>
+        <div class="comment-area-wrap">
             <label for="user-comment" class="modal-label">Comment</label>
                 <textarea  
                  name="user-comment" 
@@ -500,21 +502,21 @@
         </div>
 
 
-        <div class="modal-field">
+        <div class="modal-checkbox">
             <input 
             type="checkbox"
-             name="policy"
-             id="policy"
+             name="user-privacy"
+             id="user-privacy"
             class="check-input visually-hidden"
             value="true"
              />
-<label for="policy" class="check-text" 
- > <span>
+<label for="user-privacy" class="check-text" 
+ > <span class="privacy-text">
     <svg class="check-icon" width="10" height="8">
         <use href="./images/icons.svg#icon-check"></use>
     </svg>
- </span> I accept the terms and conditions of the &nbsp; <a href="">Privacy Policy</a></label>
-
+ </span> <p>I accept the terms and conditions of the &nbsp; <a href="#" class="privacy-link">Privacy Policy</a></label>
+</p>
         </div>
 <button type="submit" class="button">Send</button>
         </form>
