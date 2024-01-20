@@ -704,5 +704,8 @@ letter-spacing: 0.04em;
     background-color:#404BBF;
     border: none;
     fill: #F4F4FD;
-    
+}
+
+.modal-checkbox label {
+    display: inline-flex;
 }
